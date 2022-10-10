@@ -32,7 +32,7 @@ function onImageClick(evt) {
     
         return;
     }
-    var lightbox = new SimpleLightbox('.gallery a', {captionsData:"alt", captionDelay:250, close: true});
+    var lightbox = new SimpleLightbox('.gallery a', {captionsData:"alt", captionDelay:250});
 
 
 }
