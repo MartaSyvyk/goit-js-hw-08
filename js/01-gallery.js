@@ -46,23 +46,23 @@ width="800" height="600"
 `)
 newModal.show()
 let isModalOpen = newModal.visible()
-console.log (isModalOpen);
+
+
+if(!isModalOpen){
+    return  
+}
+
+document.addEventListener("keydown", onEscPress)
+function onEscPress(evt) {
+
+  if (evt.code !== "Escape"){
+        return
+  }
+  
+document.removeEventListener("keydown", onEscPress);
+newModal.close();
+
+
 };
-
-// function modalClose() {
-
-// if(!isModalOpen){
-//     return  
-// }
-
-// document.addEventListener("keydown", onEscPress)
-// function onEscPress() {
-//      onImageClick.newModal.close();
-// }
-// }
-
-
-
-
-
+}
 
