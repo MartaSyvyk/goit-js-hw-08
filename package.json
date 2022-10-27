@@ -1,6 +1,35 @@
 {
+  "type": "module",
+  "name": "goit-js-hw-08",
+  "version": "2.0.0",
+  "description": "This project was created with Parcel. For familiarization and setting additional features [refer to documentation](https://parceljs.org/).",
+  "homepage": "https://MartaSyvyk.github.io/goit-js-hw-08/",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /goit-js-hw-08/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MartaSyvyk/goit-js-hw-08.git"
+  },
+  "keywords": [],
+  "author": "Marta Syvyk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MartaSyvyk/goit-js-hw-08/issues"
+  },
   "dependencies": {
-    "basiclightbox": "^5.0.4",
-    "simplelightbox": "^2.10.3"
-  }
+    "@vimeo/player": "^2.18.0",
+    "lodash.throttle": "^4.1.1",
+    "modern-normalize": "^1.1.0",
+    "simplelightbox": "^2.10.4"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "parcel": "^2.6.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "main": "index.js"
 }
