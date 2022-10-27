@@ -10,7 +10,7 @@ let userData = { email: '', message: '' };
 
 function onLoad(event) {
   if (localStorage.getItem('feedback-form-state')) {
-    storageDataObject = JSON.parse(localStorage.getItem('feedback-form-state'));
+   const storageDataObject = JSON.parse(localStorage.getItem('feedback-form-state'));
 
     refs.emailEl.value = storageDataObject.email;
     refs.messageEl.value = storageDataObject.message;
